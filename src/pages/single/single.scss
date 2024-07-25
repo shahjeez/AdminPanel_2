@@ -1,0 +1,83 @@
+.single {
+  display: flex;
+  width: 100%;
+  .singleContainer {
+    flex: 6;
+    .top {
+      padding: 20px;
+      display: flex;
+      gap: 30px;
+      .left {
+        flex: 1;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        position: relative;
+        .btnContainer {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 20px;
+          float: right;
+          .editProductButton,
+          .hideProductButton {
+            top: 0;
+            right: 0;
+            width: 60px;
+            align-items: center;
+            text-align: center;
+            padding: 5px;
+            font-size: 14px;
+            color: #ffffff;
+            background-color: #7451f8;
+            border: none;
+            border-radius: 5px 5px 5px 5px;
+            cursor: pointer;
+            &:hover {
+              background-color: #5936f2;
+            }
+          }
+        }
+      }
+      .item {
+        display: flex;
+        gap: 100px;
+        .itemImg {
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
+          float: right;
+        }
+        .details {
+          width: 100%;
+
+          .itemTitle {
+            margin-bottom: 10px;
+            color: #555;
+          }
+          .detailItem {
+            margin-bottom: 10px;
+            font-size: 14px;
+            width: 500px;
+            .itemKey {
+              font-weight: bold;
+              color: gray;
+              margin-right: 10px;
+            }
+            .itemValue {
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      flex: 2;
+    }
+    .title {
+      font-size: 16px;
+      color: lightgray;
+      margin-bottom: 20px;
+    }
+  }
+}

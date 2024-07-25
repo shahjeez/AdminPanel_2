@@ -1,0 +1,69 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Blue Bull",
+      "units": 35,
+      "category": "Beverages"
+    },
+    { "id": 2, "productName": "Bananas", "units": 12, "category": "Fruits" },
+    { "id": 3, "productName": "Milk", "units": 25, "category": "Dairy" },
+    { "id": 4, "productName": "Bread", "units": 15, "category": "Bakery" },
+    { "id": 5, "productName": "Eggs", "units": 30, "category": "Dairy" },
+    {
+      "id": 6,
+      "productName": "Tomatoes",
+      "units": 20,
+      "category": "Vegetables"
+    },
+    {
+      "id": 7,
+      "productName": "Potatoes",
+      "units": 18,
+      "category": "Vegetables"
+    },
+    { "id": 8, "productName": "Onions", "units": 22, "category": "Vegetables" },
+    {
+      "id": 9,
+      "productName": "Chicken Breast",
+      "units": 50,
+      "category": "Meat"
+    },
+    {
+      "id": 10,
+      "productName": "Cheddar Cheese",
+      "units": 40,
+      "category": "Dairy"
+    },
+    { "id": 11, "productName": "Apples", "units": 10, "category": "Fruits" },
+    {
+      "id": 12,
+      "productName": "Orange Juice",
+      "units": 28,
+      "category": "Beverages"
+    },
+    { "id": 13, "productName": "Yogurt", "units": 16, "category": "Dairy" },
+    { "id": 14, "productName": "Butter", "units": 45, "category": "Dairy" },
+    { "id": 15, "productName": "Rice", "units": 60, "category": "Grains" },
+    { "id": 16, "productName": "Pasta", "units": 35, "category": "Grains" },
+    { "id": 17, "productName": "Cereal", "units": 32, "category": "Grains" },
+    {
+      "id": 18,
+      "productName": "Spinach",
+      "units": 14,
+      "category": "Vegetables"
+    },
+    {
+      "id": 19,
+      "productName": "Carrots",
+      "units": 12,
+      "category": "Vegetables"
+    },
+    {
+      "id": 20,
+      "productName": "Broccoli",
+      "units": 18,
+      "category": "Vegetables"
+    }
+  ]
+}

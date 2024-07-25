@@ -1,0 +1,51 @@
+.dataTable {
+    height: 600px;
+    padding: 20px;
+}
+
+.cellAction {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    gap: 10px; /* Space between buttons */
+    height: 100%; /* Ensure the container takes full height */
+    max-height: 40px; /* Restrict height of the container to fit the buttons */
+    overflow: hidden; /* Prevent overflow of child elements */
+}
+
+.editButton, .removeButton {
+    padding: 6px 12px; /* Consistent padding */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 12px; /* Font size for better fit */
+    line-height: 1.5; /* Adjust line-height */
+    text-align: center; /* Center text */
+    border: none; /* Remove default border */
+    cursor: pointer;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    height: 30px; /* Fixed height */
+    width: 80px; /* Fixed width for uniform size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    box-sizing: border-box; /* Ensure padding and border are included in width and height */
+}
+
+.editButton {
+    color: #ffffff; /* White text */
+    border: 1px solid #ff9900; /* Blue border */
+    background-color: #ff9821; /* Blue background */
+    
+    &:hover {
+        background-color: #ffd000; /* Darker blue on hover */
+    }
+}
+
+.removeButton {
+    color: #ffffff; /* White text */
+    border: 1px solid #d32f2f; /* Red border */
+    background-color: #d32f2f; /* Red background */
+    
+    &:hover {
+        background-color: #b71c1c; /* Darker red on hover */
+    }
+}
