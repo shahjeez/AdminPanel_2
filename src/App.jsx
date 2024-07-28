@@ -1,37 +1,44 @@
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/home/Home";
-import Login from "./pages/login/Login";
+import LoginPage from "./pages/login/Login";
 import List from "./pages/list/List";
-import New from "./pages/new/New";
 import Single from "./pages/single/Single";
 import OrderList from "./pages/orders/OrderList";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import OrderDetail from "./pages/orders/OrderDetail";
+import NewProduct from "./pages/new/NewProduct";
+import NewCategory from "./pages/new/NewCategory"; // Add this line
+import NewSubCategory from "./pages/new/NewSubCategory"; // Add this line
 
-const App = () => {
-  return (
-    <div className='App'>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='login' element={<Login />} />
-          <Route path='users'>
-            <Route index element={<List />} />
-            <Route path=':userId' element={<Single />} />
-            <Route path='new' element={<New />} />
-          </Route>
-          <Route path='products'>
-            <Route index element={<List />} />
-            <Route path=':productId' element={<Single />} />
-            <Route path='new' element={<New />} />
-          </Route>
-          <Route path='orders'>
-            <Route index element={<OrderList />} />
-            <Route path=':orderId' element={<Single />} />
-            <Route path='new' element={<New />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
-};
+const App = () => (
+  <div className='App'>
+    <Routes>
+      <Route path='/' element={<Navigate to='/login' />} />
+      <Route path='login' element={<LoginPage />} />
+      <Route path='users'>
+        <Route index element={<List />} />
+        <Route path=':userId' element={<Single />} />
+      </Route>
+      <Route path='products'>
+        <Route index element={<List />} />
+        <Route path=':productId' element={<Single />} />
+        <Route path='new' element={<NewProduct />} />
+      </Route>
+      <Route path='orders'>
+        <Route index element={<OrderList />} />
+        <Route path='details/:id' element={<OrderDetail />} />
+      </Route>
+      <Route path='categories/new' element={<NewCategory />} />{" "}
+      {/* Add this line */}
+      <Route path='subcategories/new' element={<NewSubCategory />} />{" "}
+      {/* Add this line */}
+    </Routes>
+  </div>
+);
 
-export default App;
+const Root = () => (
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
+
+export default Root;

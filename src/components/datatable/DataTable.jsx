@@ -2,17 +2,28 @@
 import React, { useState, useEffect } from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import "./dataTable.scss";
-import { columns } from "./datatablesource"; // Adjust the path as needed
+import { columns } from "./datatablesource";
 import { useNavigate } from "react-router-dom";
+
 const DataTable = () => {
   const navigate = useNavigate();
-  const handleAddToggle = () => {
+
+  const handleAddProductToggle = () => {
     navigate("/products/new");
   };
+
+  const handleAddCategoryToggle = () => {
+    navigate("/categories/new");
+  };
+
+  const handleAddSubCategoryToggle = () => {
+    navigate("/subcategories/new");
+  };
+
   const [data, setData] = useState([]);
 
   const fetchData = () => {
-    fetch("http://localhost:4000/products")
+    fetch("http://localhost:4001/products")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
@@ -28,6 +39,7 @@ const DataTable = () => {
     console.log("Row data:", params.row);
     navigate(`/products/${params.row.id}`);
   };
+
   const handleHideToggle = (params) => {
     console.log("Row data:", params.row);
   };
@@ -58,9 +70,17 @@ const DataTable = () => {
 
   return (
     <div className='dataTable'>
-      <button className='addProduct' onClick={handleAddToggle}>
-        Add
-      </button>
+      <div className='buttons'>
+        <button className='addProduct' onClick={handleAddProductToggle}>
+          Add Product
+        </button>
+        <button className='addCategory' onClick={handleAddCategoryToggle}>
+          Add Category
+        </button>
+        <button className='addSubCategory' onClick={handleAddSubCategoryToggle}>
+          Add SubCategory
+        </button>
+      </div>
       <DataGrid
         rows={data}
         columns={columns.concat(actionColumn)}

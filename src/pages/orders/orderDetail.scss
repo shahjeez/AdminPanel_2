@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.order-detail {
+  margin-left: 250px; // This should match the width of the sidebar
+  padding: 20px;
+  flex-grow: 1; // Allows the order-detail section to take up the remaining space
+
+  .order-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px; // Adjust as needed
+    margin: auto;
+  }
+
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+
+    strong {
+      font-weight: 600;
+      color: #333;
+    }
+  }
+
+  // Apply specific styles for status
+  .status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #fff;
+
+    &.pending {
+      background-color: #ffc117; // Light red for Pending
+    }
+    &.delivered {
+      background-color: #00a300; // Light green for Delivered
+    }
+    &.cancelled {
+      background-color: #c22700; // Light orange for Cancelled
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .order-detail {
+    margin-left: 0;
+  }
+}

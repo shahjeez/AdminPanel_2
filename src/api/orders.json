@@ -1,0 +1,204 @@
+{
+  "orders": [
+    {
+      "id": "1",
+      "products": "2L Milk, 1Kg Bananas",
+      "customer_num": "0301-1234567",
+      "date": "2024-07-01",
+      "time": "12:00",
+      "amount": 500,
+      "method": "Cash On Delivery",
+      "status": "Delivered"
+    },
+    {
+      "id": "2",
+      "products": "1Kg Chicken, 2Kg Rice",
+      "customer_num": "0302-2345678",
+      "date": "2024-07-01",
+      "time": "13:00",
+      "amount": 1000,
+      "method": "Credit Card",
+      "status": "Pending"
+    },
+    {
+      "id": "3",
+      "products": "1L Oil, 1Kg Sugar",
+      "customer_num": "0303-3456789",
+      "date": "2024-07-01",
+      "time": "14:00",
+      "amount": 300,
+      "method": "Online",
+      "status": "Cancelled"
+    },
+    {
+      "id": "4",
+      "products": "2Kg Potatoes, 1Kg Tomatoes",
+      "customer_num": "0304-4567890",
+      "date": "2024-07-01",
+      "time": "15:00",
+      "amount": 400,
+      "method": "Cash On Delivery",
+      "status": "Pending"
+    },
+    {
+      "id": "5",
+      "products": "2L Milk, 1Kg Bananas",
+      "customer_num": "0305-5678901",
+      "date": "2024-07-01",
+      "time": "16:00",
+      "amount": 800,
+      "method": "Credit Card",
+      "status": "Pending"
+    },
+    {
+      "id": "6",
+      "products": "1Kg Tomatoes, 500g Spinach, 1Kg Potatoes",
+      "customer_num": "0306-6789012",
+      "date": "2024-07-01",
+      "time": "17:45",
+      "amount": 500,
+      "method": "Online",
+      "status": "Delivered"
+    },
+    {
+      "id": "7",
+      "products": "1Kg Apples, 1Kg Grapes, 1 Pack Cookies",
+      "customer_num": "0307-7890123",
+      "date": "2024-07-01",
+      "time": "19:00",
+      "amount": 1200,
+      "method": "Cash On Delivery",
+      "status": "Delivered"
+    },
+    {
+      "id": "8",
+      "products": "2 Bread, 2Kg Sugar",
+      "customer_num": "0308-8901234",
+      "date": "2024-07-01",
+      "time": "20:30",
+      "amount": 600,
+      "method": "Credit Card",
+      "status": "Pending"
+    },
+    {
+      "id": "9",
+      "products": "1Kg Beef, 1L Cooking Oil",
+      "customer_num": "0309-9012345",
+      "date": "2024-07-01",
+      "time": "21:45",
+      "amount": 2200,
+      "method": "Online",
+      "status": "Delivered"
+    },
+    {
+      "id": "10",
+      "products": "1Kg Flour, 500g Butter, 1 Pack Pasta",
+      "customer_num": "0310-0123456",
+      "date": "2024-07-01",
+      "time": "22:30",
+      "amount": 1100,
+      "method": "Cash On Delivery",
+      "status": "Delivered"
+    },
+    {
+      "id": "11",
+      "products": "2Kg Potatoes, 1L Oil, 1Kg Carrots",
+      "customer_num": "0311-1234567",
+      "date": "2024-07-02",
+      "time": "08:00",
+      "amount": 900,
+      "method": "Credit Card",
+      "status": "Pending"
+    },
+    {
+      "id": "12",
+      "products": "1Kg Flour, 1L Milk, 500g Cheese",
+      "customer_num": "0312-2345678",
+      "date": "2024-07-02",
+      "time": "10:15",
+      "amount": 1300,
+      "method": "Cash On Delivery",
+      "status": "Delivered"
+    },
+    {
+      "id": "13",
+      "products": "500g Chicken, 1Kg Rice, 1L Juice",
+      "customer_num": "0313-3456789",
+      "date": "2024-07-02",
+      "time": "12:30",
+      "amount": 1800,
+      "method": "Online",
+      "status": "Delivered"
+    },
+    {
+      "id": "14",
+      "products": "3Kg Apples, 1 Pack Biscuits, 1L Milk",
+      "customer_num": "0314-4567890",
+      "date": "2024-07-02",
+      "time": "14:00",
+      "amount": 1200,
+      "method": "Cash On Delivery",
+      "status": "Delivered"
+    },
+    {
+      "id": "15",
+      "products": "1Kg Oranges, 500g Flour, 1 Pack Cookies",
+      "customer_num": "0315-5678901",
+      "date": "2024-07-02",
+      "time": "16:45",
+      "amount": 950,
+      "method": "Credit Card",
+      "status": "Pending"
+    },
+    {
+      "id": "16",
+      "products": "2Kg Chicken, 1Kg Tomatoes, 500g Cheese",
+      "customer_num": "0316-6789012",
+      "date": "2024-07-02",
+      "time": "18:30",
+      "amount": 2200,
+      "method": "Online",
+      "status": "Delivered"
+    },
+    {
+      "id": "17",
+      "products": "1Kg Grapes, 1 Pack Biscuits, 1L Juice",
+      "customer_num": "0317-7890123",
+      "date": "2024-07-02",
+      "time": "20:00",
+      "amount": 1350,
+      "method": "Cash On Delivery",
+      "status": "Delivered"
+    },
+    {
+      "id": "18",
+      "products": "1Kg Apples, 500g Butter, 1L Milk",
+      "customer_num": "0318-8901234",
+      "date": "2024-07-02",
+      "time": "21:30",
+      "amount": 1100,
+      "method": "Credit Card",
+      "status": "Pending"
+    },
+    {
+      "id": "19",
+      "products": "2Kg Sugar, 1Kg Potatoes, 500g Tomatoes",
+      "customer_num": "0319-9012345",
+      "date": "2024-07-02",
+      "time": "23:00",
+      "amount": 700,
+      "method": "Online",
+      "status": "Delivered"
+    },
+    {
+      "id": "20",
+      "products": "1Kg Flour, 2L Milk, 500g Cheese",
+      "customer_num": "0320-0123456",
+      "date": "2024-07-02",
+      "time": "23:45",
+      "amount": 1400,
+      "method": "Cash On Delivery",
+      "status": "Delivered"
+    }
+  ]
+}

@@ -19,30 +19,31 @@ const Sidebar = () => {
       <div className='center'>
         <ul>
           <p className='title'>MAIN</p>
-          <li>
-            <Link to='/' style={{ textDecoration: "none" }}>
+          <Link to='/' style={{ textDecoration: "none" }}>
+            <li>
               <DashboardIcon className='icon' />
               <span>Dashboard</span>
-            </Link>
-          </li>
-          <li>
-            <Link to='/users' style={{ textDecoration: "none" }}>
+            </li>
+          </Link>
+          <Link to='/users' style={{ textDecoration: "none" }}>
+            <li>
               <GroupIcon className='icon' />
               <span>Users</span>
-            </Link>
-          </li>
-          <li>
-            <Link to='/products' style={{ textDecoration: "none" }}>
+            </li>
+          </Link>
+          <Link to='/products' style={{ textDecoration: "none" }}>
+            <li>
               <StoreIcon className='icon' />
               <span>Products</span>
-            </Link>
-          </li>
-          <li>
-            <Link to='/orders' style={{ textDecoration: "none" }}>
+            </li>
+          </Link>
+
+          <Link to='/orders' style={{ textDecoration: "none" }}>
+            <li>
               <InventoryIcon className='icon' />
               <span>Orders</span>
-            </Link>
-          </li>
+            </li>
+          </Link>
           <p className='title'>USER</p>
           <li>
             <SettingsIcon className='icon' />

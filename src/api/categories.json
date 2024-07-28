@@ -1,0 +1,84 @@
+{
+  "categories": [
+    {
+      "id": "001",
+      "name": "Category 1",
+      "subCategories": [
+        { "id": "001-1", "name": "Sub Category 1" },
+        { "id": "001-2", "name": "Sub Category 2" }
+      ]
+    },
+    {
+      "id": "002",
+      "name": "Category 2",
+      "subCategories": [
+        { "id": "002-1", "name": "Sub Category 1" },
+        { "id": "002-2", "name": "Sub Category 2" }
+      ]
+    },
+    {
+      "id": "003",
+      "name": "Category 3",
+      "subCategories": [
+        { "id": "003-1", "name": "Sub Category 1" },
+        { "id": "003-2", "name": "Sub Category 2" }
+      ]
+    },
+    {
+      "id": "004",
+      "name": "Category 4",
+      "subCategories": [
+        { "id": "004-1", "name": "Sub Category 1" },
+        { "id": "004-2", "name": "Sub Category 2" }
+      ]
+    },
+    {
+      "id": "005",
+      "name": "Category 5",
+      "subCategories": [
+        { "id": "005-1", "name": "Sub Category 1" },
+        { "id": "005-2", "name": "Sub Category 2" }
+      ]
+    },
+    {
+      "id": "006",
+      "name": "Category 6",
+      "subCategories": [
+        { "id": "006-1", "name": "Sub Category 1" },
+        { "id": "006-2", "name": "Sub Category 2" }
+      ]
+    },
+    {
+      "id": "007",
+      "name": "Category 7",
+      "subCategories": [
+        { "id": "007-1", "name": "Sub Category 1" },
+        { "id": "007-2", "name": "Sub Category 2" }
+      ]
+    },
+    {
+      "id": "008",
+      "name": "Category 8",
+      "subCategories": [
+        { "id": "008-1", "name": "Sub Category 1" },
+        { "id": "008-2", "name": "Sub Category 2" }
+      ]
+    },
+    {
+      "id": "009",
+      "name": "Category 9",
+      "subCategories": [
+        { "id": "009-1", "name": "Sub Category 1" },
+        { "id": "009-2", "name": "Sub Category 2" }
+      ]
+    },
+    {
+      "id": "010",
+      "name": "Category 10",
+      "subCategories": [
+        { "id": "010-1", "name": "Sub Category 1" },
+        { "id": "010-2", "name": "Sub Category 2" }
+      ]
+    }
+  ]
+}

@@ -13,9 +13,6 @@ const Single = () => {
       <Sidebar />
       <div className='singleContainer'>
         <Navbar />
-        <button className='addProduct' onClick={handleAddToggle}>
-          Add
-        </button>
         <div className='top'>
           <div className='left'>
             <div className='btnContainer'>
@@ -82,9 +79,9 @@ const Single = () => {
           </div> */}
         </div>
 
-        <div className='bottom'>
+        {/* <div className='bottom'>
           <DataTable />
-        </div>
+        </div> */}
       </div>
     </div>
   );
