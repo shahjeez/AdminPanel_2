@@ -1,4 +1,3 @@
-// DataTable.jsx
 import React, { useState, useEffect } from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import "./dataTable.scss";
@@ -33,7 +32,7 @@ const DataTable = () => {
 
   useEffect(() => {
     fetchData();
-  }, []); // Empty dependency array means this effect runs once on mount
+  }, []);
 
   const handleEditToggle = (params) => {
     console.log("Row data:", params.row);
@@ -42,6 +41,17 @@ const DataTable = () => {
 
   const handleHideToggle = (params) => {
     console.log("Row data:", params.row);
+    const updatedData = data.map((product) =>
+      product.id === params.row.id ? { ...product, isVisible: false } : product
+    );
+    setData(updatedData);
+    fetch(`http://localhost:4001/products/${params.row.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ isVisible: false }),
+    }).catch((e) => console.log(e.message));
   };
 
   const actionColumn = [

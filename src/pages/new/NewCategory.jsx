@@ -15,6 +15,7 @@ const NewCategory = () => {
     });
   };
   const handleSubmit = () => {
+    e.preventDefault();
     console.log(details);
     setDetails(initialDetails);
     // API call to add category here.
@@ -23,7 +24,7 @@ const NewCategory = () => {
     <div className='new'>
       <Sidebar />
       <div className='addContainer'>
-        <h1>Add Categoryt</h1>
+        <h1>Add Category</h1>
         <div className='form'>
           <form onSubmit={handleSubmit}>
             <p>Category Name</p>
